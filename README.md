@@ -1,15 +1,15 @@
 # smbusrauthd
 # Samba User Authentication Daemon
-# v0.1.0-beta
+# v0.1.0-prealpha
 # By puluntu69
 
 - A lightweight, secure, queue-based Samba user authentication daemon meant for clients to easily manage SMB accounts for themselves on your server with a user-friendly web frontend.
 
 ## WARNING:
-- This is still beta software!
+- This is still pre-alpha software!
 - While this is stable and secure enough for LAN environments, schools, internal infrastructure, etc, IT IS NOT STABLE AND SECURE ENOUGH FOR PRODUCTION OR TO BE EXPOSED ON THE INTERNET!
 
-## Features:
+## Features (most likely broken on some setups):
 - [x] User registration with a simple HTML frontend and a PHP registration form
 - [x] Password strength enforcement
 - [x] Secure registration queueing using shred -u and tmpfs
