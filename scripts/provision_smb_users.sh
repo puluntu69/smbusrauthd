@@ -37,7 +37,7 @@ GREP="/usr/bin/grep"
 SHRED="/usr/bin/shred"
 
 QUEUE_DIR="/srv/www/server/data/queue"
-USERLIST="/srv/www/server/data/users.txt"
+USERLIST="/srv/www/server/data/users.list"
 
 echo "Starting SMB provisioning at $(date)"
 
