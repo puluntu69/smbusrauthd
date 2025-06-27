@@ -45,8 +45,8 @@ drwxr-x--x
 ```
 9. Make sure your web server has the proper SELinux context if you use SELinux:
 ```bash
-semanage fcontext -a -t httpd_sys_rw_content_t "/srv/www/server/data(/.*)?"
-restorecon -Rv /srv/www/server/data
+semanage fcontext -a -t httpd_sys_rw_content_t "/srv/www/server(/.*)?"
+restorecon -Rv /srv/www/server/
 ```
 10. Create a cron job for the provision_smb_users.sh script. Add this in root's crontab:
 ```bash
