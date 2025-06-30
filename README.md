@@ -4,7 +4,7 @@
 # By puluntu69
 
 ## WHAT'S NEW IN THIS RELEASE?
-- tmpfs is actually fixed.
+- tmpfs is actually fixed. (or at least hopefully, on some setups it still could be broken)
 - Queue files in the tmpfs are actually securely erased
 
 ## What's this project about?
