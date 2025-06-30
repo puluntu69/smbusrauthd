@@ -43,11 +43,11 @@ usermod -aG smbusrauthd-services apache # Change this to nginx or any other web 
 ```
 7. Add the following in /etc/fstab:
 ```fstab
-tmpfs /srv/www/server/data/queue tmpfs rw,nosuid,noexec,nodev,mode=0660,uid=0,gid=<GID of smbusrauthd-services>,size=10m 0 0
+tmpfs /srv/www/server/data/queue tmpfs rw,nosuid,noexec,nodev,mode=0770,uid=0,gid=<GID of smbusrauthd-services>,size=10m 0 0
 ```
 8. Mount /srv/www/server/data/queue as a tmpfs filesystem:
 ```bash
-mount -t tmpfs -o rw,nosuid,noexec,nodev,mode=0660,uid=0,gid=<GID of smbusrauthd-services>,size=10m tmpfs /srv/www/server/data/queue
+mount -t tmpfs -o rw,nosuid,noexec,nodev,mode=0770,uid=0,gid=<GID of smbusrauthd-services>,size=10m tmpfs /srv/www/server/data/queue
 ```
 9. Make sure the entire web server root (and everything under it recursively) is owned by apache (or nginx) and has the following permissions:
 ```
@@ -55,7 +55,7 @@ drwxr-x--x
 ```
 10. IMPORTANT EXCEPTION! Make sure /srv/www/server/data/queue is owned by the user root, the group smbusrauthd-services, AND has the following permissions:
 ```
-drw-rw----
+drwxrwx---
 ```
 11. Make sure your web server has the proper SELinux context if you use SELinux:
 ```bash
