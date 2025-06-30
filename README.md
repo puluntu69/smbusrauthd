@@ -1,12 +1,12 @@
 # smbusrauthd
 # Samba User Authentication Daemon
-# v0.1.0-beta
+# v0.1.0-prealpha
 # By puluntu69
 
 - A lightweight, secure, queue-based Samba user authentication daemon meant for clients to easily manage SMB accounts for themselves on your server with a user-friendly web frontend.
 
 ## WARNING:
-- This is still beta software!
+- This is still prealpha software!
 - While this is stable and secure enough for LAN environments, schools, internal infrastructure, etc, IT IS NOT STABLE AND SECURE ENOUGH FOR PRODUCTION OR TO BE EXPOSED ON THE INTERNET!
 
 ## Features:
@@ -45,8 +45,8 @@ drwxr-x--x
 ```
 9. Make sure your web server has the proper SELinux context if you use SELinux:
 ```bash
-semanage fcontext -a -t httpd_sys_rw_content_t "/srv/www/server/data(/.*)?"
-restorecon -Rv /srv/www/server/data
+semanage fcontext -a -t httpd_sys_rw_content_t "/srv/www/server(/.*)?"
+restorecon -Rv /srv/www/server
 ```
 10. Create a cron job for the provision_smb_users.sh script. Add this in root's crontab:
 ```bash
