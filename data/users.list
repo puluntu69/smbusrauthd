@@ -1,0 +1,5 @@
+## This file contains a list of all registered users with the following format:
+# username:sha512_with_salt_hashed_password
+## While this is not used for authentication, which is handled by smbpasswd, it is used to check whether a username is already taken
+## and to require a password before account deletion.
+## It is recommended to remove this comment and example before using this software to avoid conflicts.

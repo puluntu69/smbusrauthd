@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Samba User Authentication Registration</title>
+    </head>
+    <body>
+        <h1>Samba User Authentication Registration Page</h1>
+        <p>
+            This website is used to make an account using the Samba User Authentication Daemon.<br>
+            Every account gets its own space where the user can store files using the SMB protocol.
+        </p>
+        <hr>
+        <form action="register.php" method="post">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="john" required>
+            </div>
+            <br>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" maxlength="50" required>
+            </div>
+            <br>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+        <hr>
+        <h2>Password Strength Requirements</h2>
+        <p>
+            - Password must be at least 10 characters long.<br>
+            - Password must contain at least one uppercase letter.<br>
+            - Password must contain at least one lowercase letter.<br>
+            - Password must contain at least one digit.<br>
+            - Password must contain at least one special character.<br>
+        </p>
+        <hr>
+        <h2>Notes</h2>
+        <p>
+            - The username will automatically be converted to all lower-case if any upper-case letters are provided.
+        </p>
+    </body>
+</html>
