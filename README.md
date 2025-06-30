@@ -7,6 +7,7 @@
 - tmpfs is actually fixed.
 - Queue files in the tmpfs are actually securely erased
 
+## What's this project about?
 - A lightweight, secure, queue-based Samba user authentication daemon meant for clients to easily manage SMB accounts for themselves on your server with a user-friendly web frontend.
 
 ## WARNING:
