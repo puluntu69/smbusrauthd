@@ -17,7 +17,7 @@
 ## Features (most likely broken on some setups):
 - [x] User registration with a simple HTML frontend and a PHP registration form
 - [x] Password strength enforcement
-- [x] Secure registration queueing using shred -u and tmpfs
+- [x] Secure registration queueing using dd and tmpfs
 - [x] Cron-based auto-provisioning daemon for system SMB accounts via smbpasswd
 - [x] SELinux-compatible and root-isolated for security
 - [x] No databases or frameworks - just HTML, PHP, Bash and flat text files
