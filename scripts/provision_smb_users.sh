@@ -51,7 +51,7 @@ for file in "$QUEUE_DIR"/*.rgs; do
 	[ -e "$file" ] || continue
 
 	echo "Processing $file"
-	line=$(<"$file")
+	{ read -r _; read -r line; } < $file
 	username="${line%%:*}"
 	password="${line#*:}"
 
