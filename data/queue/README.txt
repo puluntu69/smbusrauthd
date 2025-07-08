@@ -7,6 +7,6 @@
 ## Due to wear-leveling on SSDs, it's not 100% guaranteed that shred -u will securely erase this sensitive info!
 ## You can safely ignore this message if you're using an HDD.
 ## To do this, add:
-# tmpfs /srv/www/server/data/queue tmpfs rw,nosuid,noexec,nodev,mode=0660,uid=0,gid=<GID of smbusrauthd-services>,size=10m 0 0
+# tmpfs /srv/www/server/data/queue tmpfs rw,nosuid,noexec,nodev,mode=0770,uid=0,gid=<GID of smbusrauthd-services>,size=10m 0 0
 ## to /etc/fstab.
 ## This assumes apache or whatever other web service you use can write to this tmpfs filesystem. THEY MUST BE IN THE smbusrauthd-services GROUP!
