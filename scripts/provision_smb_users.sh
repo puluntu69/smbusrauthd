@@ -42,8 +42,8 @@ GREP="/usr/bin/grep"
 STAT="/usr/bin/stat"
 DD="/usr/bin/dd"
 RM="/usr/bin/rm"
+
 QUEUE_DIR="/srv/www/server/data/queue"
-USERLIST="/srv/www/server/data/users.txt"
 
 echo "Starting SMB provisioning at $(date)"
 
