@@ -68,7 +68,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $id = uniqid("cred_", true);
     $filepath = "/srv/www/server/data/queue/{$id}.rgs";
     file_put_contents($filepath, $line, LOCK_EX);
-    chmod("/srv/www/server/data/queue/{$id}.rgs", 000);
 
     echo "Registration successful! Account will be created shortly (max 1 minute).";
 } else {
